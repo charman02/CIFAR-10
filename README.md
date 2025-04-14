@@ -15,22 +15,27 @@ This project implements a custom convolutional neural network (CNN) architecture
 
 • Training on CIFAR-10 using PyTorch with adjustable hyperparameters.
 
-## Techniques and Hyperparameters
+## Hyperparameters
 • Learning Rate: 0.001 (decays to 0.0001 after 30 epochs)
 
 • Batch Size: 64
 
 • Epochs: 50
 
-• Dropout: 0.3 in intermediate blocks, 0.5 in output layers
+• Dropout: 0.3 in intermediate blocks, 0.5 in output fully connected layers
 
-• Activation: ReLU
+• Activation: ReLU after the initial convolution layer and each intermediate block
 
-• Optimizer: Adam
+• Optimizer: Adam with weight decay (L2 regularization) of 1e-4
 
-• Loss Function: Cross entropy loss
+• Loss Function: Cross-entropy loss
 
-• Manual hyperparameter tuning via trial and error
+## Techniques
+• Manual Hyperparameter Tuning: Hyperparameters were selected through trial-and-error, adjusting one parameter at a time while monitoring testing performance
+
+• Model Checkpointing: The model is saved whenever the test accuracy improves
+
+• Learning Rate Scheduling: Manual decay of the learning rate at epoch 30
 
 ## Results
 The model achieves competitive testing accuracy (~87%) on CIFAR-10 with effective use of weighted feature aggregation and architectural enhancements like dropout, batch norm, and skip connections.
