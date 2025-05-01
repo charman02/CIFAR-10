@@ -1,4 +1,4 @@
-# CIFAR-10 Image Classification with Weighted Convolutional Blocks
+# CIFAR-10 Image Classifier with Weighted Convolutional Blocks
 
 This project implements a custom convolutional neural network (CNN) architecture for image classification on the CIFAR-10 dataset. The model is designed around a modular structure of intermediate blocks, where each block consists of multiple parallel convolutional layers whose outputs are combined via a learned weighted sum.
 
