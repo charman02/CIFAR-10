@@ -4,7 +4,7 @@ A custom convolutional neural network for image classification on the CIFAR-10 d
 
 The recorded training run reaches a best test accuracy of **86.9%** on CIFAR-10.
 
-> This project was originally built as an assignment for the ECS7026P *Neural Networks and Deep Learning* module (Queen Mary University of London). It is a single self-contained notebook.
+> This project is a single self-contained notebook.
 
 ## Tech Stack
 
